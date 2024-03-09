@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lilypad</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/slider.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <!-- logo -->
+        <div class="header__logo-wrap">
+          <a href="#" class="header__logo"
+            ><img
+              src="./assets/images/logo_2.svg"
+              class="header__img"
+              alt="Lilypad"
+          /></a>
+          <p class="header__logo-text">Lilypad</p>
+        </div>
+        <!-- hamburger icon -->
+        <input class="header__side-menu" type="checkbox" id="side-menu" />
+        <label class="header__hamb" for="side-menu"
+          ><span class="header__hamb-line"></span
+        ></label>
+        <!-- menu -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#mission" class="header__link">Миссия</a>
+            </li>
+            <li class="header__item">
+              <a href="#aboutWomen" class="header__link">О женщинах</a>
+            </li>
+            <li class="header__item">
+              <a href="#profTest" class="header__link">Профориентация</a>
+            </li>
+            <li class="header__item">
+              <a href="#prospects" class="header__link">Перспективы</a>
+            </li>
+            <li class="header__item">
+              <a href="#courses" class="header__link">Курсы</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="mission__container">
+        <p class="mission__text">
+          — Наш сайт позволяет определиться с самой подходящей профессией в мире
+          IT для тебя и найти свое сообщество, которое поможет при обучении.
+          Обеспечиваем вас вдохновением и поддержкой!
+        </p>
+      </div>
+      <div id="aboutWomen" class="portrait__wrapper">
+        <h2 class="portrait__title">Знаменитые женщины в сфере IT</h2>
+        <div class="portrait">
+          <button class="portrait__btn" id="sliderBack">
+            <img src="./assets/images/vector1.png" alt="назад" />
+          </button>
+          <div class="portrait__slider-body">
+            <div class="portrait__slider-line">
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/adele_goldberg.jpg"
+                  alt="adele_goldberg" />
+              </div>
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/Hedy_Lamarr.jpg"
+                  alt="Hedy_Lamarr" />
+              </div>
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/Radia_Perlman.png"
+                  alt="Radia_Perlman" />
+              </div>
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/sophie_wilson.jpg"
+                  alt="sophie_wilson" />
+              </div>
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/Ellen_Hancock1.webp"
+                  alt="Ellen_Hancock" />
+              </div>
+              <div class="portrait__slider-el">
+                <img
+                  class="portrait__img"
+                  src="./assets/images/Marissa_Mayer.jpg"
+                  alt="Marissa_Mayer" />
+              </div>
+            </div>
+          </div>
+          <button class="portrait__btn" id="sliderForward">
+            <img src="./assets/images/vector2.png" alt="вперед" />
+          </button>
+        </div>
+      </div>
+      <!-- career guidance block start !-->
+
+      <div id="profTest" class="career-guidance-container">
+        <p class="career-guidance-text">
+          Пройди тест на профориентацию в сфере IT!
+        </p>
+        <form action="https://translate.google.ru" target="_blank">
+          <button class="career-guidance-btn">Начать бесплатный тест!</button>
+        </form>
+      </div>
+      <!-- career guidance block end !-->
+      <!-- Perspectives block start -->
+      <div id="prospects" class="perspectives">
+        <h2 class="perspectives__title">Перспективы работы в IT</h2>
+        <div class="perspectives__wrapper">
+          <div class="perspectives__card">
+            <h3 class="perspectives__card-title">Lorum ipsum</h3>
+            <div class="perspectives__card-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur venenatis nisl, eu malesuada nibh interdum eu. Donec
+                vulputate commodo ipsum eu tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="perspectives__card">
+            <h3 class="perspectives__card-title">Lorum ipsum</h3>
+            <div class="perspectives__card-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur venenatis nisl, eu malesuada nibh interdum eu. Donec
+                vulputate commodo ipsum eu tincidunt.
+              </p>
+            </div>
+          </div>
+          <div class="perspectives__card">
+            <h3 class="perspectives__card-title">Lorum ipsum</h3>
+            <div class="perspectives__card-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur venenatis nisl, eu malesuada nibh interdum eu. Donec
+                vulputate commodo ipsum eu tincidunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Perspectives block end -->
+      <!--   block courses start -->
+      <div class="courses" id="courses">
+        <div class="courses__h2-wrap">
+          <h2 class="courses__h2">Курсы</h2>
+          <div class="courses__blocks">
+            <div class="courses__button">
+              <button class="courses__btn portrait__btn" id="sliderBackCourses">
+                <img src="./assets/images/vector1.png" alt="назад" />
+              </button>
+            </div>
+            <div class="courses__block">
+              <h4>Frontend</h4>
+              <a href="#" class="courses__link"></a>
+            </div>
+            <div class="courses__block">
+              <h4>Backend</h4>
+              <a href="#" class="courses__link"></a>
+            </div>
+            <div class="courses__block">
+              <h4>No-code</h4>
+              <a href="#" class="courses__link"></a>
+            </div>
+
+            <div class="courses__button">
+              <button
+                class="courses__btn portrait__btn"
+                id="sliderForwardCourses">
+                <img src="./assets/images/vector2.png" alt="вперед" />
+              </button>
+            </div>
+          </div>
+          <div class="courses__text">
+            <span>Сложно выбрать? Пиши нам в</span>
+            <a href="#" class="courses__link">чат</a>
+          </div>
+        </div>
+      </div>
+      <!--   block courses end -->
+      <!-- links block start !-->
+
+      <div class="links-container">
+        <p class="links-text">
+          Просить помощи и поддержки — не признак слабости, а доказательство
+          силы и уверенности в себе. Ниже ты найдёшь ссылки на чаты для обмена
+          опытом с коллегами
+        </p>
+        <ul class="links-list">
+          <li class="links-list-element">
+            <a href="https://itgirlschool.com/club">● Клуб ITGIRLS</a>
+          </li>
+          <li class="links-list-element">
+            <a href="https://t.me/code_sisters_bot">● Code Sisters</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum</a>
+          </li>
+          <li class="links-list-element">
+            <a href="#">● Lorem Ipsum ●</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- links block end !-->
+    </main>
+  </body>
+</html>
